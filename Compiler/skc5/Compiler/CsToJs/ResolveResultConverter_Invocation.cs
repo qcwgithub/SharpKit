@@ -52,6 +52,9 @@ namespace SharpKit.Compiler.CsToJs
                 return omittedCallsNode;
 
             JsMember = SkJs.EntityToMember(Member);
+
+            qiucw.CheckAddInvocation(res, JsMember.Name);
+
             ProcessTarget();
 
             ProcessPrmBindings();
